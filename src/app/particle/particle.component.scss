@@ -1,7 +1,23 @@
 .p {
     position: absolute;
-    background-color: #2b2d44;
+    background-color: #626371;
     width: 2px;
     height: 2px;
     border-radius: 1px;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    from {
+        background-color: #0b0d1b;
+    }
+
+    to {
+        background-color: #626371;
+    }
 }

@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ParticleComponent } from './particle/particle.component';
+import { CloudComponent } from './cloud/cloud.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ParticleComponent
+    ParticleComponent,
+    CloudComponent
   ],
   imports: [
     BrowserModule

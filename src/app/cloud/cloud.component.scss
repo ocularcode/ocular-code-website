@@ -1,0 +1,21 @@
+.cloud {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    fill: whitesmoke;
+    overflow: visible;
+    animation-name: cloud;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 40s;
+}
+
+@keyframes cloud {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
