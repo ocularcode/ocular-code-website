@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   es = new Array(Math.ceil(Math.random() * 100 + 50));
-  clouds = new Array(Math.ceil(Math.random() * 8) + 2);
+  clouds = new Array(Math.ceil(Math.random() * 7) + 3);
   constructor() {
   }
 }
