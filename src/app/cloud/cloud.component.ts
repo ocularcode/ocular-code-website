@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cloud.component.scss']
 })
 export class CloudComponent implements OnInit {
-  randTop = Math.random() * 100;
+  randTop = Math.random() * 70;
   duration = Math.random() * 200 + 20;
   delay = -Math.random()*this.duration;
   constructor() { }
