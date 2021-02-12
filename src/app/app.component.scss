@@ -1,0 +1,52 @@
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .title {
+        padding-top: 200px;
+        font-size: 3em;
+        font-family: "Noto Sans", sans-serif;
+    }
+
+    h2 {
+        padding-top: 300px;
+    }
+}
+
+.cloud-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    .cloud {
+        width: 100%;
+        fill: white;
+        overflow: visible;
+        animation-name: cloud;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        &.c1 {
+            padding-top: 40px;
+            animation-duration: 40s;
+        }
+        &.c2 {
+            animation-duration: 20s;
+        }
+        &.c3 {
+            animation-duration: 80s;
+        }
+    }
+}
+
+@keyframes cloud {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
