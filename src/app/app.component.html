@@ -4,27 +4,9 @@
 </div>
 
 <div class="particles">
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
-  <app-particle></app-particle>
+  <div *ngFor="let e of es">
+    <app-particle></app-particle>
+  </div>
 </div>
 
 <div class="cloud-layer">
