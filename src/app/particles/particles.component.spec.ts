@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ParticleComponent } from '../particle/particle.component';
 
 import { ParticlesComponent } from './particles.component';
 
@@ -8,7 +9,7 @@ describe('ParticlesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ParticlesComponent ]
+      declarations: [ ParticlesComponent, ParticleComponent ]
     })
     .compileComponents();
   });

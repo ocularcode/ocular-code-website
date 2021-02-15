@@ -28,6 +28,15 @@
 			],
 			"label": "npm: lint",
 			"detail": "ng lint"
+		},
+		{
+			"type": "npm",
+			"script": "e2e",
+			"problemMatcher": [
+				"$eslint-compact"
+			],
+			"label": "npm: e2e",
+			"detail": "ng e2e"
 		}
 	]
 }
