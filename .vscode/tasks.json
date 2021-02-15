@@ -19,6 +19,15 @@
 			],
 			"label": "npm: deploy",
 			"detail": "ng build --prod && firebase deploy"
+		},
+		{
+			"type": "npm",
+			"script": "lint",
+			"problemMatcher": [
+				"$eslint-compact"
+			],
+			"label": "npm: lint",
+			"detail": "ng lint"
 		}
 	]
 }
