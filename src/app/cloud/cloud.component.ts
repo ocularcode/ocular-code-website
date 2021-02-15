@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class CloudComponent implements OnInit {
   top = Math.random() * 75;
   duration = Math.random() * 150 + 30;
-  delay = -Math.random()*this.duration;
-  height = Math.random()*150 + 50
+  delay = -Math.random() * this.duration;
+  height = Math.random() * 150 + 50;
   constructor() { }
 
   ngOnInit(): void {
