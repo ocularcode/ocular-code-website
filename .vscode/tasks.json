@@ -37,6 +37,15 @@
 			],
 			"label": "npm: e2e",
 			"detail": "ng e2e"
+		},
+		{
+			"type": "npm",
+			"script": "start",
+			"problemMatcher": [
+				"$eslint-compact"
+			],
+			"label": "npm: start",
+			"detail": "ng serve"
 		}
 	]
 }
