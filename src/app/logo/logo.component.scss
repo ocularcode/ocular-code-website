@@ -1,12 +1,13 @@
-.main-frame {
+.frame {
     fill: white;
+}
+
+.flare {
+    stroke: white;
+    stroke-opacity: 0.8;
 }
 
 .glass {
-    fill: #d8ffe0;
-    fill-opacity: 0.5;
-}
-
-.side-frame {
     fill: white;
+    fill-opacity: 0.5;
 }
