@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./clouds.component.scss']
 })
 export class CloudsComponent implements OnInit {
-  clouds = new Array(Math.ceil(Math.random() * 7) + 3);
+  clouds = new Array(Math.ceil(Math.random() * 3));
   constructor() { }
 
   ngOnInit(): void {
