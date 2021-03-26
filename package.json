@@ -8,8 +8,7 @@
     "build-prod": "ng build --prod",
     "test": "ng test --browsers=ChromeHeadless --watch=false",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "deploy": "ng test --browsers=ChromeHeadless --watch=false && ng build --prod && firebase deploy"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
