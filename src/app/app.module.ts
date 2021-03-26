@@ -7,6 +7,7 @@ import { CloudsComponent } from './clouds/clouds.component';
 import { ParticleComponent } from './particle/particle.component';
 import { ParticlesComponent } from './particles/particles.component';
 import { LogoComponent } from './logo/logo.component';
+import { InProgressComponent } from './in-progress/in-progress.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LogoComponent } from './logo/logo.component';
     CloudsComponent,
     CloudComponent,
     ParticleComponent,
-    LogoComponent
+    LogoComponent,
+    InProgressComponent
   ],
   imports: [
     BrowserModule
