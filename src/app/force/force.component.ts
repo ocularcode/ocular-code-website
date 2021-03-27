@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import * as d3 from 'd3';
 
 @Component({
@@ -6,18 +6,24 @@ import * as d3 from 'd3';
   templateUrl: './force.component.html',
   styleUrls: ['./force.component.scss']
 })
-export class ForceComponent implements OnInit {
+export class ForceComponent implements OnInit, AfterViewInit {
   attractionForce = 0.001;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.draw()
   }
 
-  draw() {
-    const width = 600;
-    const height = 400;
+  ngAfterViewInit() {
+    const width = this.content.nativeElement.offsetWidth;
+    const height = this.content.nativeElement.offsetHeight;
+
+    console.log(width);
+    console.log(height);
+    this.draw(width, height);
+  }
+
+  draw(width: number, height: number) {
     d3.select('#canvas')
       .attr('viewBox', `${-width / 2} ${-height / 2} ${width} ${height}`);
 
@@ -48,4 +54,7 @@ export class ForceComponent implements OnInit {
     particle.y = -height / 3;
     particle.vx = 0.55 * height * Math.sqrt(this.attractionForce);
   }
+
+  @ViewChild('content')
+  content!: ElementRef;
 }
