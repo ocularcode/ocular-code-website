@@ -16,11 +16,9 @@ export class ForceComponent implements OnInit {
   }
 
   draw() {
-    const width = window.innerWidth;
-    const height = window.innerHeight;
+    const width = 600;
+    const height = 400;
     d3.select('#canvas')
-      .attr('width', width)
-      .attr('height', height)
       .attr('viewBox', `${-width / 2} ${-height / 2} ${width} ${height}`);
 
     const particle: any = { domCtx: d3.select('#particle') };
