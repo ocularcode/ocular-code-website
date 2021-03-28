@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import * as d3 from 'd3';
 
 @Component({
@@ -7,7 +7,14 @@ import * as d3 from 'd3';
   styleUrls: ['./force.component.scss']
 })
 export class ForceComponent implements OnInit, AfterViewInit {
-  attractionForce = 0.001;
+  public width = 100;
+  public height = 22;
+
+  private attractionForce = 0.001;
+  private trailLength = 3000;
+  private velocityFactor = 1;
+  private trailWidth = 0.3;
+  private yFactor = 0.5;
 
   constructor() { }
 
@@ -15,17 +22,12 @@ export class ForceComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    const width = this.content.nativeElement.offsetWidth;
-    const height = this.content.nativeElement.offsetHeight;
-
-    console.log(width);
-    console.log(height);
-    this.draw(width, height);
+    this.draw();
   }
 
-  draw(width: number, height: number) {
+  draw() {
     d3.select('#canvas')
-      .attr('viewBox', `${-width / 2} ${-height / 2} ${width} ${height}`);
+      .attr('viewBox', `${-this.width / 2} ${-this.height / 2} ${this.width} ${this.height}`);
 
     const particle: any = { domCtx: d3.select('#particle') };
     d3.forceSimulation()
@@ -43,18 +45,15 @@ export class ForceComponent implements OnInit, AfterViewInit {
 
     d3.timer(() => {
       d3.select('#trail').append('circle')
-        .attr('r', 1.5)
+        .attr('r', this.trailWidth)
         .attr('cx', particle.x)
         .attr('cy', particle.y)
-        .transition().duration(3500)
+        .transition().duration(this.trailLength)
         .style('opacity', 0)
         .remove();
     });
 
-    particle.y = -height / 3;
-    particle.vx = 0.55 * height * Math.sqrt(this.attractionForce);
+    particle.y = -this.height * this.yFactor;
+    particle.vx = this.velocityFactor * this.height * Math.sqrt(this.attractionForce);
   }
-
-  @ViewChild('content')
-  content!: ElementRef;
 }

@@ -1,8 +1,7 @@
-<div #content class="box">
+<div [ngStyle]="{'width': width, 'height': height}" ngClass="box">
     <p>IN PROGRESS</p>
     <svg id="canvas">
         <g id="trail"></g>
-        <!-- <circle id="center" r="20" cx="0" cy="0"></circle> -->
-        <circle id="particle" r="4"></circle>
+        <circle id="particle" r="1"></circle>
     </svg>
 </div>
