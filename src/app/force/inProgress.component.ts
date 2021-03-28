@@ -2,11 +2,11 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import * as d3 from 'd3';
 
 @Component({
-  selector: 'app-force',
-  templateUrl: './force.component.html',
-  styleUrls: ['./force.component.scss']
+  selector: 'app-in-progress',
+  templateUrl: './inProgress.component.html',
+  styleUrls: ['./inProgress.component.scss']
 })
-export class ForceComponent implements OnInit, AfterViewInit {
+export class InProgressComponent implements OnInit, AfterViewInit {
   public width = 100;
   public height = 22;
 

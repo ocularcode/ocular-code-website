@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ForceComponent } from './force.component';
+import { InProgressComponent } from './inProgress.component';
 
 describe('ForceComponent', () => {
-  let component: ForceComponent;
-  let fixture: ComponentFixture<ForceComponent>;
+  let component: InProgressComponent;
+  let fixture: ComponentFixture<InProgressComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ForceComponent ]
+      declarations: [ InProgressComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ForceComponent);
+    fixture = TestBed.createComponent(InProgressComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
