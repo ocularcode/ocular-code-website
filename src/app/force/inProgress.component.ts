@@ -40,7 +40,7 @@ export class InProgressComponent implements OnInit, AfterViewInit {
         particle.domCtx
           .datum(particle)
           .attr('cx', (d: any) => d.x)
-          .attr('cy', (d: any) => d.y)
+          .attr('cy', (d: any) => d.y);
       });
 
     d3.timer(() => {
