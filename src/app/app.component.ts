@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Ocular Code';
-  info = 'In progress...';
   constructor() {
   }
 }
