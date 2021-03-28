@@ -18,7 +18,6 @@ import { ForceComponent } from './force/force.component';
     CloudComponent,
     ParticleComponent,
     LogoComponent,
-    InProgressComponent,
     ForceComponent
   ],
   imports: [
