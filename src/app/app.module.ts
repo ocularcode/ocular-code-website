@@ -8,6 +8,7 @@ import { ParticleComponent } from './particle/particle.component';
 import { ParticlesComponent } from './particles/particles.component';
 import { LogoComponent } from './logo/logo.component';
 import { InProgressComponent } from './force/inProgress.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { InProgressComponent } from './force/inProgress.component';
     CloudComponent,
     ParticleComponent,
     LogoComponent,
-    InProgressComponent
+    InProgressComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule
