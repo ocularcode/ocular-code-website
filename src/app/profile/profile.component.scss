@@ -1,0 +1,17 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .image {
+        height: 200px;
+        border-radius: 5%;
+        transition: transform 0.1s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(0.95);
+        }
+    }
+}
