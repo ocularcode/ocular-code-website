@@ -3,15 +3,48 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
 
     .image {
-        height: 200px;
+        height: 100%;
         border-radius: 5%;
         transition: transform 0.1s ease-in-out;
         cursor: pointer;
 
         &:hover {
             transform: scale(0.95);
+        }
+
+        &.active {
+            border-radius: 15%;
+        }
+    }
+
+    .content {
+        box-sizing: border-box;
+        background-color: chocolate;
+        height: 100%;
+        padding: 10px;
+
+        .divide {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+
+            .info {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    margin-top: 0;
+                }
+    
+                h3 {
+                    margin: 0;
+                }
+            }
         }
     }
 }
