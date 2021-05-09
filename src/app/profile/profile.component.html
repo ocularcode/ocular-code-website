@@ -2,7 +2,15 @@
     <img (click)="toggle()" class="image" ngClass="{{open ? 'active' : ''}}" src="../../assets/oliver.jpeg" />
     <div ngClass="content" *ngIf="true">
         <div class="divide">
-            <span>Content with flow</span>
+            <div ngClass="title">
+                <div class="first">
+                    <span>Content</span>
+                    <span>with</span>
+                </div>
+                <div class="second">
+                    <span>flow</span>
+                </div>
+            </div>
             <div ngClass="info">
                 <h3>Fullstack developer</h3>
                 <h2 ngClass="name">
