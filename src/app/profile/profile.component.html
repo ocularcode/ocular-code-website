@@ -1,6 +1,6 @@
 <div class="profile">
-    <img (click)="toggle()" class="image" ngClass="{{open ? 'active' : ''}}" src="../../assets/oliver.jpeg" />
-    <div ngClass="content" *ngIf="true">
+    <img (click)="toggle()" class="image" ngClass="{{isOpen ? 'active' : ''}}" src="../../assets/oliver.jpeg" />
+    <div ngClass="{{isOpen ? 'active' : ''}}" class="content">
         <div class="divide">
             <div ngClass="title">
                 <div class="first">

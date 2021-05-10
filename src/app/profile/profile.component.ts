@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
-  public open = false;
+  public isOpen = false;
 
   constructor() { }
 
@@ -14,7 +14,7 @@ export class ProfileComponent implements OnInit {
   }
 
   toggle() {
-    this.open = !this.open;
+    this.isOpen = !this.isOpen;
   }
 
 }
