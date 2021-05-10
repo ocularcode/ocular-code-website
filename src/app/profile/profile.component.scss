@@ -1,0 +1,114 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+
+    .image {
+        height: 100%;
+        border-radius: 5%;
+        transition: transform 0.1s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(0.95);
+        }
+    }
+
+    .content {
+        box-sizing: border-box;
+        transform: translateX(-50px);
+        opacity: 0;
+        height: 100%;
+        padding: 10px;
+        transition: 1s all;
+
+        &.active {
+            transform: translateX(0);
+            opacity: 1;
+
+            .divide {
+                .title {
+                    .first {
+                        span:first-of-type {
+                            transition: all 0.8s ease-in-out;
+                            transform: translateY(0);
+                            opacity: 1;
+                        }
+                        span:last-of-type {
+                            transition: all 1s ease-in-out;
+                            transform: translateX(0);
+                            transition-delay: 0.2s;
+                            opacity: 1;
+                        }
+                    }
+                    .second {
+                        transition: all 1.2s ease-in-out;
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .divide {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+
+            .title {
+                font-size: 3em;
+
+                .first {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    span {
+                        padding: 5px;
+                    }
+
+                    span:first-of-type {
+                        font-weight: 400;
+                        transition: all 1s ease-in-out;
+                        transform: translateY(-50px);
+                        opacity: 0;
+                    }
+
+                    span:last-of-type {
+                        font-style: italic;
+                        font-weight: 200;
+                        transition: all 1s ease-in-out;
+                        transition-delay: 0.2s;
+                        transform: translateX(50px);
+                        opacity: 0;
+                    }
+                }
+
+                .second {
+                    display: flex;
+                    justify-content: flex-end;
+                    font-weight: 700;
+                    transition: all 1s ease-in-out;
+                    transform: translateY(50px);
+                    opacity: 0;
+                }
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    margin-top: 0;
+                }
+
+                h3 {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

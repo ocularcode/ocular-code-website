@@ -1,0 +1,22 @@
+<div class="profile">
+    <img (click)="toggle()" class="image" ngClass="{{isOpen ? 'active' : ''}}" src="../../assets/oliver.jpeg" />
+    <div ngClass="{{isOpen ? 'active' : ''}}" class="content">
+        <div class="divide">
+            <div ngClass="title">
+                <div class="first">
+                    <span>Content</span>
+                    <span>with</span>
+                </div>
+                <div class="second">
+                    <span>flow</span>
+                </div>
+            </div>
+            <div ngClass="info">
+                <h3>Fullstack developer</h3>
+                <h2 ngClass="name">
+                    Oliver Carlsson
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
