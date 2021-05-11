@@ -9,6 +9,7 @@ import { ParticlesComponent } from './particles/particles.component';
 import { LogoComponent } from './logo/logo.component';
 import { InProgressComponent } from './force/inProgress.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ScrollIconComponent } from './scroll-icon/scroll-icon.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProfileComponent } from './profile/profile.component';
     ParticleComponent,
     LogoComponent,
     InProgressComponent,
-    ProfileComponent
+    ProfileComponent,
+    ScrollIconComponent
   ],
   imports: [
     BrowserModule
