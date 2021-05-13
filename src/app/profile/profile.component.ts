@@ -10,17 +10,12 @@ export class ProfileComponent implements OnInit {
 
   constructor(public el: ElementRef) { }
 
-  ngOnInit(): void {
-  }
-
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     const componentPos = this.el.nativeElement.offsetTop;
     const scrollPos = window.pageYOffset;
     const screenHeight = window.innerHeight;
-    const triggerPoint = scrollPos - screenHeight * 0.5
-
-    console.log(triggerPoint, componentPos);
+    const triggerPoint = scrollPos - screenHeight * 0.5;
 
     if (triggerPoint >= componentPos) {
       this.isOpen = true;
@@ -29,4 +24,6 @@ export class ProfileComponent implements OnInit {
     }
   }
 
+  ngOnInit(): void {
+  }
 }
