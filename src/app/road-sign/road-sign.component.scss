@@ -1,6 +1,8 @@
 .road-sign {
+    position: relative;
     display: flex;
-    align-items: center;
+    width: 100vw;
+    justify-content: center;
 
     .content {
         padding: 5vh 10vw;
@@ -20,7 +22,10 @@
     }
 
     .pole {
-        width: 50vw;
+        margin-top: 10vh;
+        z-index: -1;
+        position: absolute;
+        width: 100vw;
         height: 10px;
         background-color: slategrey;
     }
