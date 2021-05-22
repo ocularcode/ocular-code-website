@@ -1,8 +1,27 @@
 .road-sign {
-    padding: 10vh 10vw;
-    box-sizing: border-box;
-    width: 70vw;
-    border: 5px solid white;
-    border-radius: 3%;
-    background-color: #01735C;
+    display: flex;
+    align-items: center;
+
+    .content {
+        padding: 5vh 10vw;
+        box-sizing: border-box;
+        width: 70vw;
+        border: 10px solid white;
+        border-radius: 3%;
+        background-color: #01735c;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        span {
+            margin: 10vh 0;
+        }
+    }
+
+    .pole {
+        width: 50vw;
+        height: 10px;
+        background-color: slategrey;
+    }
 }
