@@ -1,0 +1,32 @@
+.road-sign {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin-bottom: 5vh;
+
+    .content {
+        padding: 5vh 10vw;
+        box-sizing: border-box;
+        border: 10px solid white;
+        border-radius: 3%;
+        background-color: #01735c;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        span {
+            margin: 0 0 10vh 0;
+        }
+    }
+
+    .pole {
+        margin-top: 10vh;
+        z-index: -1;
+        position: absolute;
+        width: 100vw;
+        height: 10px;
+        background: linear-gradient(0deg, rgba(110,110,110,1) 0%, rgba(129,129,129,1) 70%, rgba(82,82,82,1) 100%);
+    }
+}
