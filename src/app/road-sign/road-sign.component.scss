@@ -3,11 +3,11 @@
     display: flex;
     width: 100vw;
     justify-content: center;
+    margin-bottom: 5vh;
 
     .content {
         padding: 5vh 10vw;
         box-sizing: border-box;
-        width: 70vw;
         border: 10px solid white;
         border-radius: 3%;
         background-color: #01735c;
@@ -17,7 +17,7 @@
         flex-direction: column;
 
         span {
-            margin: 10vh 0;
+            margin: 0 0 10vh 0;
         }
     }
 
