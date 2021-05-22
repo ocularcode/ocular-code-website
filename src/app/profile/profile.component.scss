@@ -4,12 +4,18 @@
     align-items: center;
     height: 100%;
     padding: 30px;
+    flex-wrap: wrap;
     box-sizing: border-box;
 
     .image {
         height: 100%;
         border-radius: 5%;
-        transition: transform 0.1s ease-in-out;
+        transition: transform 0.5s ease-in-out;
+        transform: scale(0.9);
+
+        &.active {
+            transform:scale(1);
+        }
     }
 
     .content {
