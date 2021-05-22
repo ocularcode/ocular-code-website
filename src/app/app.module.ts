@@ -10,6 +10,7 @@ import { LogoComponent } from './logo/logo.component';
 import { InProgressComponent } from './force/inProgress.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ScrollIconComponent } from './scroll-icon/scroll-icon.component';
+import { RoadSignComponent } from './road-sign/road-sign.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ScrollIconComponent } from './scroll-icon/scroll-icon.component';
     LogoComponent,
     InProgressComponent,
     ProfileComponent,
-    ScrollIconComponent
+    ScrollIconComponent,
+    RoadSignComponent
   ],
   imports: [
     BrowserModule
